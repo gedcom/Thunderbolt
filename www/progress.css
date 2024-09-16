@@ -1,0 +1,46 @@
+.shiny-progress-container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  /* Make sure it draws above all Bootstrap components */
+  z-index: 2000;
+}
+
+.shiny-progress .progress {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 5px;
+  margin: 0px;
+}
+
+.shiny-progress .bar {
+  opacity: 0.6;
+  transition-duration: 250ms;
+}
+
+.shiny-progress .progress-text {
+  right: 5px;
+  position: absolute;
+  align: right;
+  vertical-align: middle;
+  width: auto;
+  height: 50px;
+  font-size: 2em;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 5px 5px;
+  opacity: 0.8;
+}
+
+.shiny-progress .progress-text .progress-message {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.shiny-progress .progress-text .progress-detail {
+  padding: 0px 3px;
+  font-size: 80%;
+}
