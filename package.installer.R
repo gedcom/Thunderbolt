@@ -3,6 +3,7 @@ is.installed = function(packages) sapply(packages, function(p) is.element(p, ins
 # CRAN packages
 cran.packages = c(
 	"tidyverse",
+	"BiocManager", # BioConductor, required to install BioConductor packages
 	"readxl",	# Excel support
 	"writexl",
 	"networkD3",	# networkD3 package for rendering network graphs
@@ -16,7 +17,8 @@ cran.packages = c(
 	"plotly",	# Yet another interactive plotting tool
 	"VennDiagram", # Venn diagrams
 	"shinycssloaders",
-	"magrittr"
+	"magrittr",
+	"reshape2"
 )
 
 # Bioconductor packages

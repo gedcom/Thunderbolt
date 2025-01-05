@@ -23,13 +23,13 @@ source("shinyextensions.R")
 source("fisherfuncs.r", local = TRUE)
 source("fileupload/fileupload.server.R", local = TRUE)
 
-dbdir = "/srv/tb.data"
+dbdir = "~/tb.data"
 
 #SERVERSIDE
 rootdir = "/srv/tb.data"
 subdirs = c("datasets", "analyses", "results", "protlists", "pathlists")
-alldirs = c(rootdir, paste(rootdir, subdirs, sep = "/"))
-metadata.path = paste(rootdir, "metadata.RData", sep = "/")
+alldirs = c(dbdir, paste(dbdir, subdirs, sep = "/"))
+metadata.path = paste(dbdir, "metadata.RData", sep = "/")
 
 metadata = if (do.serverside)
 {
